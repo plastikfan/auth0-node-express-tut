@@ -1,0 +1,107 @@
+{
+  "name": "nodejs-esm-starter",
+  "version": "0.0.1",
+  "description": "Starter project for NodeJs esm packages, with rollup, typescript, mocha, chai, eslint, istanbul/nyc, gulp",
+  "type": "module",
+  "main": "dist/nodejs-esm-starter-src-bundle.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/nodejs-esm-starter-src-bundle.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14.17.0"
+  },
+  "scripts": {
+    "clean": "gulp clean",
+    "build": "gulp build-prod",
+    "build:d": "gulp build-dev",
+    "prod": "gulp prod",
+    "dev": "gulp dev",
+    "watch": "gulp watch",
+    "lint": "gulp lint",
+    "fix": "gulp fix",
+    "check:18": "gulp i18next",
+    "test": "gulp mocha",
+    "t": "gulp retest",
+    "coverage": "nyc --reporter=lcov --reporter=text npm run test",
+    "exec": "node ./dist/nodejs-esm-starter-src-bundle.js",
+    "audit": "npm audit --production",
+    "dep": "echo 'todo: define a dependency checker like npm-check-updates (ncu) or depcheck'",
+    "release": "npm run _standard:rel",
+    "_gulp:rel": "release",
+    "_standard:rel": "standard-version",
+    "standard:f": "standard-version --first-release",
+    "change:all": "npx conventional-changelog -p angular -i CHANGELOG.md -s",
+    "remm": "rm -rf node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snivilization/nodejs-esm-starter.git"
+  },
+  "keywords": [
+    "esm",
+    "nodejs"
+  ],
+  "author": "plastikfan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Snivilization/nodejs-esm-starter/issues"
+  },
+  "homepage": "https://github.com/Snivilization/nodejs-esm-starter#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/chai": "^4.2.22",
+    "@types/dirty-chai": "^2.0.2",
+    "@types/i18next-fs-backend": "^1.1.2",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.7",
+    "@types/sinon": "^10.0.6",
+    "@types/sinon-chai": "^3.2.5",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "chai": "^4.3.4",
+    "conventional-changelog-cli": "^2.1.1",
+    "conventional-github-releaser": "^3.1.5",
+    "conventional-recommended-bump": "^6.1.0",
+    "cpr": "^3.0.1",
+    "cross-env": "^7.0.3",
+    "deep-copy-all": "^1.3.4",
+    "deepmerge": "^4.2.2",
+    "del": "^6.0.0",
+    "dirty-chai": "^2.0.1",
+    "dotenv": "^10.0.0",
+    "eslint": "^8.2.0",
+    "eslint-plugin-i18next": "^5.1.2",
+    "eslint-plugin-node": "^11.1.0",
+    "esm": "^3.2.25",
+    "execa": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-mocha": "^8.0.0",
+    "i18next-parser": "^5.3.0",
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0",
+    "rollup": "^2.60.0",
+    "rollup-plugin-esformatter": "^2.0.1",
+    "rollup-plugin-multi-entry": "^2.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "sinon": "^12.0.1",
+    "sinon-chai": "^3.7.0",
+    "source-map-support": "^0.5.20",
+    "standard-version": "^9.3.2",
+    "ts-node": "^10.4.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "i18next": "^21.5.3",
+    "i18next-cli-language-detector": "^1.1.0",
+    "i18next-fs-backend": "^1.1.4"
+  }
+}
