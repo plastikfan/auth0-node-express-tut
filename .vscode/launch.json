@@ -11,7 +11,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/dist/nodejs-esm-starter-src-bundle.js",
+      "program": "${workspaceFolder}/dist/auth0-node-express-tut-src-bundle.js",
       "outFiles": [
         "${workspaceFolder}/**/*.js"
       ]
@@ -23,7 +23,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/dist/nodejs-esm-starter-test-bundle.js",
+      "program": "${workspaceFolder}/dist/auth0-node-express-tut-test-bundle.js",
       "outFiles": [
         "${workspaceFolder}/**/*.js"
       ]

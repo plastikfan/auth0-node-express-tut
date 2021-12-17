@@ -6,7 +6,7 @@ import Backend from "i18next-fs-backend";
 import I18nextCLILanguageDetector from "i18next-cli-language-detector";
 
 // @ts-ignore
-import starter from "nodejs-esm-starter";
+import auth0NodeExpressTut from "auth0-node-express-tut";
 
 const EN_GB = "en-GB";
 const EN_US = "en-US";
@@ -16,7 +16,7 @@ describe("i18next-cli-language-detector", () => {
     await i18next
       .use(I18nextCLILanguageDetector)
       .use(Backend)
-      .init(starter.i18nBackEndOptions, (err, t) => {
+      .init(auth0NodeExpressTut.i18nBackEndOptions, (err, t) => {
         if (err) {
           return console.error(err);
         }

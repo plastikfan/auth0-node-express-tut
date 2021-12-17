@@ -1,12 +1,12 @@
 {
-  "name": "nodejs-esm-starter",
+  "name": "auth0-node-express-tut",
   "version": "0.0.1",
   "description": "Starter project for NodeJs esm packages, with rollup, typescript, mocha, chai, eslint, istanbul/nyc, gulp",
   "type": "module",
-  "main": "dist/nodejs-esm-starter-src-bundle.js",
+  "main": "dist/auth0-node-express-tut-src-bundle.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist/nodejs-esm-starter-src-bundle.js",
+    ".": "./dist/auth0-node-express-tut-src-bundle.js",
     "./package.json": "./package.json"
   },
   "files": [
@@ -28,7 +28,7 @@
     "test": "gulp mocha",
     "t": "gulp retest",
     "coverage": "nyc --reporter=lcov --reporter=text npm run test",
-    "exec": "node ./dist/nodejs-esm-starter-src-bundle.js",
+    "exec": "node ./dist/auth0-node-express-tut-src-bundle.js",
     "audit": "npm audit --production",
     "dep": "echo 'todo: define a dependency checker like npm-check-updates (ncu) or depcheck'",
     "release": "npm run _standard:rel",
@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Snivilization/nodejs-esm-starter.git"
+    "url": "git+https://github.com/Snivilization/auth0-node-express-tut.git"
   },
   "keywords": [
     "esm",
@@ -49,9 +49,9 @@
   "author": "plastikfan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Snivilization/nodejs-esm-starter/issues"
+    "url": "https://github.com/Snivilization/auth0-node-express-tut/issues"
   },
-  "homepage": "https://github.com/Snivilization/nodejs-esm-starter#readme",
+  "homepage": "https://github.com/Snivilization/auth0-node-express-tut#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
