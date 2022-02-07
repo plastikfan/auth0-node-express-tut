@@ -104,7 +104,7 @@ const ts = {
 };
 
 const externals = {
-  source: ["i18next", "i18next-cli-language-detector", "i18next-fs-backend"],
+  source: ["i18next", "i18next-cli-language-detector", "i18next-fs-backend", "express"],
 
   // note here, we specify name in the external list because we don't want to bundle
   // the source into the test bundle.
