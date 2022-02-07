@@ -2,7 +2,7 @@
 import roptions from "./options.mjs";
 import copy from "deep-copy-all";
 import multi from "rollup-plugin-multi-entry";
-import typescript from "@rollup/plugin-typescript";
+import typescript from "rollup-plugin-typescript2";
 
 // source, we include the uglifier for the production source code
 // By default, the output is a singular object. This means that it
